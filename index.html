@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Random User</title>
 </head>
 
-<body>
 
+
+<body>
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
@@ -20,16 +23,19 @@
     </div>
 
     <div id="app">
-        <img v-bind:src="Picture" v-bind:alt="`${FName}${LName}`">
-        <h1> {{FName}} {{LName}} </h1>
-        <p>{{Email}}</p>
-        <p>{{Phone}} </p>
-        <p>{{Address}} </p>
+        <h1 class="title"> {{Title}} </h1>
+        <div class="user">
+            <img :src="Picture" :alt="`${FName}${LName}`">
+            <h1> {{FName}} {{LName}} </h1>
+            <p> <span class="material-icons">email</span> {{Email}}</p>
+            <p> <span class="material-icons">call</span> {{Phone}} </p>
+            <p> <span class="material-icons">location_on</span> {{Address}} </p>
 
-        <button>Regenerate</button>
-        
-        <div class="credit">
-            <p>Made With ❤️ By Drish</p>
+            <div class="btn">
+                <button> <span class="material-icons">person_search</span>Regenerate</button>
+            </div>
+
+            <footer>Made With ❤️ By <a target="_blank" href="https://drish-xd.is-a.dev/">Drish</a></footer>
         </div>
     </div>
 

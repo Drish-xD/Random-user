@@ -1,12 +1,13 @@
 const app = Vue.createApp({
     data () {
         return {
+            Title: 'Random User Generator',
             FName: 'Lorem',
-            LName: 'Ipsuim',
-            Email: 'jbcdhnc@gmail.com',
-            Phone: '88656559566',
+            LName: 'Ipsum',
+            Email: 'tempmail@mail.com',
+            Phone: '1234567890',
             Address: 'lorem ipsium',
-            Picture: 'https://randomuser.me/api/portraits/men/67.jpg',
+            Picture: 'https://randomuser.me/api/portraits/lego/5.jpg',
         }
     },
 })

@@ -12,61 +12,93 @@ body {
     height: 100vh;
     background-color: #202020;
     color: #f8f8f8;
-    display: grid;
-    place-content: center center;
 }
 
 #app {
-    display: grid;
-    place-items: center center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     text-align: center;
+    letter-spacing: 1px;
+    font: 30px Syne;
+}
+
+.title {
+    margin: 10px 0;
+    color: #daa520;
+}
+
+.user {
     width: 360px;
+    margin: auto;
     padding: 25px 10px 12px 10px;
-    background-color: #202020;
+    background-color: #202020bd;
     border: 5px solid #daa520e6;
     border-radius: 50px;
     font: 25px syne;
     z-index: 2;
 }
 
-img {
+.user img {
     width: 150px;
     height: 150px;
     border: 5px solid #daa520;
     border-radius: 50%;
 }
 
-h1 {
+.user h1 {
     margin: 10px 0;
 }
 
-p {
+.user p {
     margin: 3px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button {
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.user button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 800 20px Fira Mono;
     padding: 10px 25px;
     color: #f8f8f8;
     background-color: #202020;
     border: 2px solid #daa520;
     border-radius: 25px;
-    font: 800 20px Fira Mono;
-    font-stretch: expanded;
     cursor: pointer;
     margin: 25px 0 0 0;
     transition: all 0.5s;
 }
 
-button:hover {
+.user button:hover {
     background-color: #daa520;
     color: #202020;
 }
 
-.credit {
+.user footer {
     display: block;
-    font: 400 15px Syne;
-    color: #daa520;
+    font: 400 15px Fira Mono;
     margin-top: 20px;
+}
+
+.user footer a {
+    color: #daa520;
+    text-decoration: none;
+}
+
+.material-icons {
+    padding-right: 10px;
+}
+
+.user footer a:hover {
+    text-decoration: underline solid;
 }
 
 /* Background Animation */
