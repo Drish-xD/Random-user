@@ -12,3 +12,10 @@ body {
     display: grid;
     place-content: center center;
 }
+
+#app {
+    padding: 30px;
+    border: 2px solid  #f8f8f8;
+    border-radius: 50px;
+    cursor: pointer;
+}
