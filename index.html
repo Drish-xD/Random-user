@@ -10,8 +10,29 @@
 </head>
 
 <body>
-    <div id="app"></div>
+
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
     </div>
+
+    <div id="app">
+        <img v-bind:src="Picture" v-bind:alt="`${FName}${LName}`">
+        <h1> {{FName}} {{LName}} </h1>
+        <p>{{Email}}</p>
+        <p>{{Phone}} </p>
+        <p>{{Address}} </p>
+
+        <button>Regenerate</button>
+        
+        <div class="credit">
+            <p>Made With ❤️ By Drish</p>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/vue@3.0.5"></script>
     <script src="app.js"></script>
 </body>
