@@ -29,7 +29,7 @@ body {
 }
 
 .user {
-    width: 360px;
+    min-width: 360px;
     margin: auto;
     padding: 25px 10px 12px 10px;
     background-color: #202020bd;
