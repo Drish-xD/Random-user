@@ -4,7 +4,7 @@ It generates random user using a [Random user API] and written in [Vue.js].
 
 ### **Check live Demo -> [Demo] :octocat:**
 
-![Screenshot](https://github.com/Drish-xD/Random-user/blob/main/static/Assets/Screenshot.png "Screenshot")
+![Screenshot](https://github.com/Drish-xD/Random-user/blob/master/Assets/Screenshot.png "Screenshot")
 
 [Random user API]: https://randomuser.me/
 [Vue.js]: https://vuejs.org/
